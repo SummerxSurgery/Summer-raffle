@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Grande Tombola pour Summer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f1fc;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #7e4ca4;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #7e4ca4;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .paypal-form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Grande Tombola pour Summer</h1>
+        <p class="section">Soutenez notre petite chienne Summer en participant à notre tombola. Chaque billet coûte <span class="highlight">20 $</span> et vous pouvez en acheter plusieurs.</p>
+        <p class="section highlight">🎟️ Achetez vos billets – 20 $ chacun<br>(N'oubliez pas d'écrire votre numéro préféré dans le champ ci-dessous)</p>
+
+        <div class="paypal-form">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="XGTJYK7TPKJR2" />
+              <table style="margin: 0 auto;">
+                <tr>
+                  <td>
+                    <input type="hidden" name="on0" value="Indiquez ici le(s) numéro(s) choisi(s):"/>
+                    Indiquez ici le(s) numéro(s) choisi(s):
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="os0" maxLength="200" style="width: 100%; padding: 5px;" />
+                  </td>
+                </tr>
+              </table>
+              <input type="hidden" name="currency_code" value="USD" />
+              <br>
+              <input type="image" src="https://www.paypalobjects.com/fr_XC/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - paiement sécurisé" alt="Acheter" />
+            </form>
+        </div>
+
+        <div class="section">
+            <p>Merci pour votre soutien 🐾</p>
+        </div>
+    </div>
+</body>
+</html>
